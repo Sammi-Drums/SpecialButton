@@ -5,10 +5,43 @@ h1{
     text-align: center;
     width: max-content;
     border: 1px solid black;
+    color: yellow;
 }
 
 button{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+a{
+    text-decoration: none;
+    margin: 50% 50%;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    width: max-content;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: #f9f9f9;
+}
+body{
+    background-color: black;
+}
+
+h1::after{
+    content: "";
+    background: red;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
 }
